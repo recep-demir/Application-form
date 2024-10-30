@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <header>                                         
+            <img src="https://cdn-icons-png.flaticon.com/512/1034/1034131.png" alt="" width="75">
+            <h1>Application Form</h1>
+        </header>
+        <section>
+            <div><label for="ad">Full Name:</label>
+                <input class="kutu" type="text" id="ad" placeholder="Your Full Name"/></div>
+
+            <div><label for="email">Email Address:</label>
+                <input class="kutu" type="email" id="email" placeholder="example@email.com" ></div>
+
+            <div><label for="phone">Phone Number:</label><input class="kutu" 
+                type="tel" id="phone" placeholder="xxx-xxx-xxxx"></div>
+
+            <div><label for="birth">Date of Birth</label><input class="kutu" type="date" name="" id="birth"></div>
+            <div><label  for="gender">Gender:</label>
+                <input class="bir" type="radio" name="Gender" id="male">
+                <label class="bir" for="male">Male</label>
+                <input class="iki" type="radio" name="Gender" id="female">
+                <label class="iki" for="female">Female</label></div>
+
+            <div><label for="country">Country:</label>
+                <input class="kutu" type="text" name="" id="country" list="ulke" placeholder="Select your country">
+                <datalist id="ulke">
+                    <option value="Turkey"></option>
+                    <option value="Switzerland"></option>
+                    <option value="France"></option>
+                  </datalist>
+            </div>
+            <fieldset>
+                <legend style="color: #00796b; font-weight:bold;">Skills and Experience</legend>
+                <input type="checkbox" name="" id="coding">
+                <label for="coding">Coding</label>
+                <input type="checkbox" name="" id="design">
+                <label for="design">Design</label>
+                <input type="checkbox" name="" id="Marketing">
+                <label for="Marketing">Marketing</label>
+                <div>
+                <label for="yorum">Brief Experience:</label>
+                <textarea class="kutu" name="" id="yorum" cols="20" rows="4" placeholder="Describe your experience..."></textarea>
+            </div>
+            </fieldset>
+
+            <input class="kutu" type="submit" value="Submit Application">
+        </section>
+    </div>
+</body>
+</html>
+
